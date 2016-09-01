@@ -1,4 +1,4 @@
 <?php
-namespace Caffeinated\Presenter\Exceptions;
+namespace Karl456\Presenter\Exceptions;
 
 class PresenterException extends \Exception {}

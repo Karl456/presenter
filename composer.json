@@ -1,5 +1,5 @@
 {
-    "name": "caffeinated/presenter",
+    "name": "karl456/presenter",
     "description": "Laravel 5 View Presenters",
     "keywords": ["view", "presenter", "laravel", "caffeinated"],
     "license": "MIT",
@@ -7,15 +7,19 @@
         {
             "name": "Shea Lewis",
             "email": "shea.lewis89@gmail.com"
+        },
+        {
+            "name": "Karl Robinson",
+            "email": "karl@karl-robinson.com"
         }
     ],
     "require": {
         "php": ">=5.5.9",
-        "illuminate/support": "5.1.*|5.2.*"
+        "illuminate/support": "5.1.*|5.2.*|5.3.*"
     },
     "autoload": {
         "psr-4": {
-            "Caffeinated\\Presenter\\": "src"
+            "Karl456\\Presenter\\": "src"
         }
     }
 }

@@ -1,5 +1,5 @@
 <?php
-namespace Caffeinated\Presenter;
+namespace Karl456\Presenter;
 
 abstract class Presenter
 {

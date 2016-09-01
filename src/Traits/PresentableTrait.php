@@ -1,7 +1,7 @@
 <?php
-namespace Caffeinated\Presenter\Traits;
+namespace Karl456\Presenter\Traits;
 
-use Caffeinated\Presenter\Exceptions\PresenterException;
+use Karl456\Presenter\Exceptions\PresenterException;
 
 trait PresentableTrait
 {

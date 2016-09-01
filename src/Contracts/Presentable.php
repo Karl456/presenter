@@ -1,5 +1,5 @@
 <?php
-namespace Caffeinated\Presenter\Contracts;
+namespace Karl456\Presenter\Contracts;
 
 interface Presentable
 {

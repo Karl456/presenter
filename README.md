@@ -1,8 +1,8 @@
-Caffeinated Presenter
+Karl456 Presenter
 =====================
 [![Laravel 5.1](https://img.shields.io/badge/Laravel-5.1-orange.svg?style=flat-square)](http://laravel.com)
 [![Laravel 5.2](https://img.shields.io/badge/Laravel-5.2-orange.svg?style=flat-square)](http://laravel.com)
-[![Source](http://img.shields.io/badge/source-caffeinated/presenter-blue.svg?style=flat-square)](https://github.com/caffeinated/presenter)
+[![Source](http://img.shields.io/badge/source-karl456/presenter-blue.svg?style=flat-square)](https://github.com/karl456/presenter)
 [![License](http://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](https://tldrlegal.com/license/mit-license)
 
 Laravel 5 view presenters, originally developed after the Laracasts video tutorial on the same topic: [View Presenters From Scratch](https://laracasts.com/lessons/view-presenters-from-scratch).
@@ -26,7 +26,7 @@ Quick Installation
 Begin by installing the package through Composer.
 
 ```
-composer require caffeinated/presenter=~2.0
+composer require karl456/presenter=~2.2
 ```
 
 And that's it! With your coffee in reach, start building out some awesome presenters!
@@ -34,12 +34,12 @@ And that's it! With your coffee in reach, start building out some awesome presen
 Usage
 -----
 ### 1. Pull in trait
-Within your model, simply pull in the `Caffeinated\Presenter\Traits\PresentableTrait` trait, which will automatically instantiate the Caffeinated Presenter class.
+Within your model, simply pull in the `Karl456\Presenter\Traits\PresentableTrait` trait, which will automatically instantiate the Karl456 Presenter class.
 
 ```php
 ...
 
-use Caffeinated\Presenter\Traits\PresentableTrait;
+use Karl456\Presenter\Traits\PresentableTrait;
 
 class Example extends Eloquent
 {
@@ -55,7 +55,7 @@ Define a protected `$presenter` variable pointing to the namespace of your prese
 ```php
 ...
 
-use Caffeinated\Presenter\Traits\PresentableTrait;
+use Karl456\Presenter\Traits\PresentableTrait;
 
 class Example extends Eloquent
 {
@@ -68,13 +68,13 @@ class Example extends Eloquent
 ```
 
 ### 3. Create your presenter class
-Create a new class as defined within your model earlier - in our case we'll create a new directory within the `app` directory called `Presenters`, and create a `Page` file. Presenters should extend the abstract `Caffeinated\Presenter\Presenter` class.
+Create a new class as defined within your model earlier - in our case we'll create a new directory within the `app` directory called `Presenters`, and create a `Page` file. Presenters should extend the abstract `Karl456\Presenter\Presenter` class.
 
 ```php
 <?php
 namespace App\Presenters;
 
-use Caffeinated\Presenter\Presenter;
+use Karl456\Presenter\Presenter;
 
 class Page extends Presenter
 {
@@ -89,7 +89,7 @@ Your model instance is passed through to your presenter class automatically, and
 <?php
 namespace App\Presenters;
 
-use Caffeinated\Presenter\Presenter;
+use Karl456\Presenter\Presenter;
 
 class Page extends Presenter
 {
