@@ -26,7 +26,7 @@ Quick Installation
 Begin by installing the package through Composer.
 
 ```
-composer require karl456/presenter=~2.2
+composer require karl456/presenter=~2.3
 ```
 
 And that's it! With your coffee in reach, start building out some awesome presenters!
