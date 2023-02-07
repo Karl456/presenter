@@ -5,20 +5,12 @@ use Karl456\Presenter\Exceptions\PresenterException;
 
 trait PresentableTrait
 {
-	/**
-	 * View presenter instance
-	 *
-	 * @var mixed
-	 */
-	protected $presenterInstance;
+	protected mixed $presenterInstance = null;
 
-	/** 
-	 * Prepare a new or cached presenter instance
-	 *
-	 * @return mixed
-	 * @throws PresenterException
-	 */
-	public function present()
+    /**
+     * @throws \Karl456\Presenter\Exceptions\PresenterException
+     */
+    public function present(): mixed
 	{
 		if (! $this->presenter or ! class_exists($this->presenter)) {
 			throw new PresenterException('Please set the $presenter property to your presenter path.');

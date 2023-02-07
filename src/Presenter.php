@@ -3,28 +3,14 @@ namespace Karl456\Presenter;
 
 abstract class Presenter
 {
-	/**
-	 * @var mixed
-	 */
-	protected $entity;
+	protected mixed $entity;
 
-	/**
-	 * Constructor method.
-	 *
-	 * @param mixed $entity
-	 */
-	public function __construct($entity)
-	{
+	public function __construct(mixed $entity)
+    {
 		$this->entity = $entity;
 	}
 
-	/**
-	 * Allow for property-style retrieval
-	 *
-	 * @param  $property
-	 * @return mixed
-	 */
-	public function __get($property)
+	public function __get(string $property)
 	{
 		if (method_exists($this, $property)) {
 			return $this->{$property}();

@@ -1,11 +1,9 @@
-Karl456 Presenter
+Laravel View Presenters
 =====================
-[![Laravel 5.1](https://img.shields.io/badge/Laravel-5.1-orange.svg?style=flat-square)](http://laravel.com)
-[![Laravel 5.2](https://img.shields.io/badge/Laravel-5.2-orange.svg?style=flat-square)](http://laravel.com)
 [![Source](http://img.shields.io/badge/source-karl456/presenter-blue.svg?style=flat-square)](https://github.com/karl456/presenter)
 [![License](http://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](https://tldrlegal.com/license/mit-license)
 
-Laravel 5 view presenters, originally developed after the Laracasts video tutorial on the same topic: [View Presenters From Scratch](https://laracasts.com/lessons/view-presenters-from-scratch).
+Laravel view presenters.
 
 Presenters allow you to manipulate any form of data for display within a view file. A simple example would be if you have a user entity with fields for the first and last names, how would you simply display the full name of the user within your view file? The most common solution would be something like the following:
 
@@ -26,7 +24,7 @@ Quick Installation
 Begin by installing the package through Composer.
 
 ```
-composer require karl456/presenter=~2.3
+composer require karl456/presenter
 ```
 
 And that's it! With your coffee in reach, start building out some awesome presenters!
@@ -61,7 +59,7 @@ class Example extends Eloquent
 {
 	use PresentableTrait;
 
-	protected $presenter = 'App\Presenters\Page';
+	protected $presenter = App\Presenters\Page::class;
 
 	...
 }
